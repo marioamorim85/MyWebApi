@@ -1,0 +1,29 @@
+-- Cria o banco de dados MyWebApiDB
+CREATE DATABASE MyWebApiDB;
+GO
+
+-- Muda o contexto para o novo banco de dados
+USE MyWebApiDB;
+GO
+
+-- Cria a tabela Students
+CREATE TABLE Students
+(
+    Id INT PRIMARY KEY IDENTITY,
+    Name NVARCHAR(100),
+    Age INT,
+    Email NVARCHAR(100)
+);
+GO
+
+-- Insere dados na tabela Students
+INSERT INTO Students (Name, Age, Email) VALUES
+('João Silva', 22, 'joao.silva@gmail.com'),
+('Marta Reis', 28, 'marta.reis@hotmail.com'),
+('António Gomes', 35, 'antonio.gomes@gmail.com'),
+('Sofia Costa', 40, 'sofia.costa@hotmail.com'),
+('Ricardo Pereira', 24, 'ricardo.pereira@gmail.com'),
+('Ana Dias', 19, 'ana.dias@hotmail.com'),
+('Luís Santos', 31, 'luis.santos@gmail.com'),
+('Beatriz Fonseca', 27, 'beatriz.fonseca@hotmail.com');
+GO
